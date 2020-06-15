@@ -1,0 +1,55 @@
+@media (max-width: 900px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center; 
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+        margin-bottom: 30%;
+    }
+
+    /* resulatdo da pesquisa */
+
+    #page-search-results {
+        grid-template-columns: 1fr; /* deixa apenas 1 coluna */
+    }
+
+    #page-search-results .cards img {
+        height: 250px;
+    }
+
+    /*criar pontos */
+
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field+.field {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1700px) { /* regras para largura */
+    #page-home{
+        background-position-x: 40px;
+    }
+}
+
+@media (max-height: 760xp) {  /* regras para altura*/
+    #page-home {
+        background-position-y: 200px;
+    }
+    
+}

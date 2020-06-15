@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <!-- tag HTML (Hipertext - markup - Languague) -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- adiciona caracteres especiais -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- config tamanho das telas -->
+
+        {% block title %}
+            <title>
+                Ecoleta
+            </title>
+        {% endblock title %}
+
+    </head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/main.css">
+
+    {% block styles %}
+        {# blocos que serão substituidos pelo conteúdo de cada bloco desse da página #}
+    {% endblock styles %}
+
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <body>
+        <div id="{{ pageId }}">
+            <!-- id-> indentificador de elemento -->
+            {# bodyIds -> variável para os Ids #}
+            {% block content %}{% endblock content %}
+        </div>
+
+        {% block modal %}{% endblock modal %}
+
+        {% block scripts %}{% endblock scripts %}
+    </body>
+</html>

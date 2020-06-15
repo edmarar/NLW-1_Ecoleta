@@ -1,0 +1,36 @@
+:root /* referencia a raiz do HTML */ {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+* /* referencia todos os seletores*/ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* preenche de acordo com o tamanho da caixa */
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f0f5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubunto', sans-serif;
+    color: var(--title-color); /* var()-> chama a variável do :root */
+}
+/* BOX MODEL
+
+Modelo de Caixa:
+ - Toda caixa tem:
+    largura, altura, comprimento
+    bordas, cor, fundo, maneira que é vista pelo html
+    alinhamento, posicionamento
+*/
